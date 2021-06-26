@@ -1,0 +1,2 @@
+-keep class com.zeoflow.startup.AppInitializer
+-keep class * extends com.zeoflow.startup.Initializer
