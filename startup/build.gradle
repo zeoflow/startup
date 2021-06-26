@@ -1,0 +1,17 @@
+plugins {
+    id("com.android.library")
+    id "com.vanniktech.maven.publish"
+}
+
+android {
+    compileSdk 30
+    buildTypes.all {
+        consumerProguardFiles "proguard-rules.pro"
+        multiDexKeepProguard file("multidex-rules.pro")
+    }
+}
+
+dependencies {
+    implementation("androidx.annotation:annotation:1.2.0")
+    implementation("androidx.tracing:tracing:1.0.0")
+}
