@@ -43,7 +43,7 @@ import java.util.Set;
 public final class AppInitializer {
 
     // Tracing
-    private static final String SECTION_NAME = "Startup";
+    private static final String SECTION_NAME = "StartUp";
 
     /**
      * The {@link AppInitializer} instance.

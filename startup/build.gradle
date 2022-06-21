@@ -4,7 +4,8 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 32
+
     buildTypes.all {
         consumerProguardFiles "proguard-rules.pro"
         multiDexKeepProguard file("multidex-rules.pro")
@@ -12,6 +13,6 @@ android {
 }
 
 dependencies {
-    implementation("androidx.annotation:annotation:1.2.0")
-    implementation("androidx.tracing:tracing:1.0.0")
+    implementation("androidx.annotation:annotation:1.4.0")
+    implementation("androidx.tracing:tracing:1.1.0")
 }

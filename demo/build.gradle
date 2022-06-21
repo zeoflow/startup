@@ -1,11 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-	compileSdk 30
+	namespace 'com.zeoflow.startup'
+	compileSdk 32
+
 	defaultConfig {
 		applicationId "com.zeoflow.startup"
-		minSdkVersion 21
-		targetSdkVersion 30
+		minSdk 21
+		targetSdk 32
 		versionCode 1
 		versionName "1.0.0"
 	}

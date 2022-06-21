@@ -6,6 +6,7 @@ import androidx.annotation.Nullable;
 
 import com.zeoflow.app.Activity;
 import com.zeoflow.startup.AppInitializer;
+import com.zeoflow.startup.R;
 
 public class MainActivity extends Activity {
 
