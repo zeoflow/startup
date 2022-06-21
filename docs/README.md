@@ -33,13 +33,13 @@ To use it:
     ```groovy
       dependencies {
         // ...
-        implementation 'com.zeoflow:startup:1.0.0'
+        implementation 'com.zeoflow:startup:1.0.1'
         // ...
       }
     ```
     
 ## License
-    Copyright 2021 ZeoFlow
+    Copyright 2022 ZeoFlow
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -59,7 +59,7 @@ To use it:
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
 <p float="left">
-<a href="docs/contributors.md#pushpin-teodor-g-teodorhmx1"><img width="100" src="https://avatars.githubusercontent.com/u/22307006?v=4" hspace=5 title='Teodor G. (@TeodorHMX1) - click for details about the contributions'></a>
+<a href="docs/contributors.md#pushpin-teodor-g-teogor"><img width="100" src="https://avatars.githubusercontent.com/u/22307006?v=4" hspace=5 title='Teodor G. (@teogor) - click for details about the contributions'></a>
 </p>
 
 <!-- markdownlint-enable -->
