@@ -23,3 +23,4 @@ rootProject.name = "StartUp"
 
 include ':demo'
 include ':startup'
+include ':startup-ktx'
