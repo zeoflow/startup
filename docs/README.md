@@ -33,7 +33,9 @@ To use it:
     ```groovy
       dependencies {
         // ...
-        implementation 'com.zeoflow:startup:1.0.1'
+        implementation 'com.zeoflow.startup:startup:$version'
+        // kotlin
+        implementation 'com.zeoflow.startup:startup-ktx:$version'
         // ...
       }
     ```

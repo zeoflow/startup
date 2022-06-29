@@ -18,18 +18,19 @@ android {
 		}
 	}
 
-	lintOptions {
-		abortOnError false
-	}
-	compileOptions {
+    compileOptions {
 		sourceCompatibility JavaVersion.VERSION_1_8
 		targetCompatibility JavaVersion.VERSION_1_8
 	}
+    lint {
+        abortOnError false
+    }
 }
 
 dependencies {
 	implementation fileTree(dir: "libs", include: ["*.jar"])
 	implementation(project(':startup'))
+	implementation(project(':startup-ktx'))
 
 	implementation("com.zeoflow:flow-kit:1.6.2")
 	implementation("com.zeoflow:material-elements:2.5.0")
