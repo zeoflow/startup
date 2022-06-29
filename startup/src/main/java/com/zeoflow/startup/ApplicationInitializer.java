@@ -25,7 +25,6 @@ import android.content.pm.ProviderInfo;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.tracing.Trace;
 
 import java.util.HashMap;
@@ -35,20 +34,20 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * An {@link AppInitializer} can be used to initialize all discovered [ComponentInitializer]s.
+ * An {@link ApplicationInitializer} can be used to initialize all discovered [ComponentInitializer]s.
  * <br/>
  * The discovery mechanism is via `<meta-data>` entries in the merged `AndroidManifest.xml`.
  */
 @SuppressWarnings("WeakerAccess")
-public final class AppInitializer {
+public final class ApplicationInitializer {
 
     // Tracing
     private static final String SECTION_NAME = "StartUp";
 
     /**
-     * The {@link AppInitializer} instance.
+     * The {@link ApplicationInitializer} instance.
      */
-    private static volatile AppInitializer sInstance;
+    private static volatile ApplicationInitializer sInstance;
 
     /**
      * Guards app initialization.
@@ -65,11 +64,11 @@ public final class AppInitializer {
     final Context mContext;
 
     /**
-     * Creates an instance of {@link AppInitializer}
+     * Creates an instance of {@link ApplicationInitializer}
      *
      * @param context The application context
      */
-    AppInitializer(@NonNull Context context) {
+    ApplicationInitializer(@NonNull Context context) {
         mContext = context.getApplicationContext();
         mDiscovered = new HashSet<>();
         mInitialized = new HashMap<>();
@@ -85,15 +84,15 @@ public final class AppInitializer {
 
     /**
      * @param context The Application {@link Context}
-     * @return The instance of {@link AppInitializer} after initialization.
+     * @return The instance of {@link ApplicationInitializer} after initialization.
      */
     @NonNull
     @SuppressWarnings("UnusedReturnValue")
-    public static AppInitializer getInstance(@NonNull Context context) {
+    public static ApplicationInitializer getInstance(@NonNull Context context) {
         if (sInstance == null) {
             synchronized (sLock) {
                 if (sInstance == null) {
-                    sInstance = new AppInitializer(context);
+                    sInstance = new ApplicationInitializer(context);
                 }
             }
         }
